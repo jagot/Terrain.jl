@@ -1,3 +1,5 @@
 # Terrain
 
-[![Build Status](https://travis-ci.org/jagot/Terrain.jl.svg?branch=master)](https://travis-ci.org/jagot/Terrain.jl)
+![Simple example](/examples/simple.png?raw=true "Simple example")
+
+[Simple example](/examples/simple.jl) using [Rayly.jl](https://github.com/jagot/Rayly.jl).
