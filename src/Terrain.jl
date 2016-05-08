@@ -1,5 +1,5 @@
 module Terrain
 
-# package code goes here
+include("heightfield.jl")
 
 end # module
