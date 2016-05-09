@@ -22,7 +22,7 @@ Terrain.faultline!(hf, 500, Terrain.sinstep(0.1,0.1))
 
 compress(a::AbstractArray, mi, ma) = (a - minimum(a))*(ma-mi)/(maximum(a)-minimum(a)) + mi
 
-hf2 = hf
+hf2 = Heightfield(hf)
 hf2.y = compress(hf2.y, -0.2, 0.2)
 tris = Terrain.triangle_list(hf2)
 

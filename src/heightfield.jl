@@ -9,6 +9,8 @@ end
 Heightfield(w::Float64,h::Float64, nx::Integer, nz::Integer) =
     Heightfield(w, h, zeros(Float64, nx, nz))
 
+Heightfield(hf::Heightfield) = Heightfield(hf.w, hf.h, copy(hf.y))
+
 function triangle_list(hf::Heightfield)
     nx,nz = size(hf.y)
     x = linspace(-1,1,nx)*hf.w/2
